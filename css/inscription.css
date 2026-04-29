@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* la boîte du formulaire */
+form {
+  background: #ffffff;
+
+  padding: 30px;
+  border: 2px solid #000000;
+  width: 300px;
+
+  box-shadow: 0 0 20px rgba(46, 213, 115, 0.2);
+}

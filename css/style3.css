@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif; /* police du site */
+    background: linear-gradient(135deg, #fdfcfc, #ffffff); /* fond degrade sombre */
+    color: rgb(0, 0, 0); /* couleur du texte */
+    margin: 0; /* enleve les marges de base */
+}
+
+header {
+    background: red; /* couleur du bandeau */
+    padding: 25px; /* espace dedans */
+    text-align: center; /* centre le texte */
+    font: bold 2.2em Arial, sans-serif; /* regroupe taille + gras + police */
+}
+
+section {
+    padding: 40px; /* espace interieur */
+    max-width: 900px; /* largeur max */
+    margin: auto; /* centre le bloc */
+}
+
+h2 {
+    color: #ff4444; /* couleur des titres */
+}
+
+.event {
+    margin-bottom: 25px; /* espace entre les blocs */
+}
+
+.event span {
+    color: #ff7777; /* couleur de la date */
+    font-weight: bold; /* met en gras */
+}
+
+.highlight {
+    background: #7c7b7b; /* fond plus clair */
+    padding: 15px; /* espace interieur */
+    border-radius: 10px; /* coins arrondis */
+    margin-top: 20px; /* espace au dessus */
+}
+
+table {
+    width: 100%; /* prend toute la largeur */
+    border-collapse: collapse; /* fusionne les bordures */
+    margin-top: 20px; /* espace au dessus */
+}
+
+th, td {
+    border: 1px solid #555; /* bordure */
+    padding: 10px; /* espace interieur */
+    text-align: center; /* centre le texte */
+}
+
+th {
+    background: red; /* fond des titres */
+}
+
+footer {
+    background: #b1aeae; /* fond sombre */
+    text-align: center; /* centre texte */
+    padding: 20px; /* espace interieur */
+    margin-top: 40px; /* espace au dessus */
+}
+
+a {
+    color: #ff4444; /* couleur des liens */
+}
+
+/* galerie */
+.gallery {
+    display: flex; /* met les images en ligne */
+    justify-content: center; /* centre les images */
+    gap: 30px; /* espace entre */
+    flex-wrap: wrap; /* passe a la ligne si besoin */
+    margin-top: 20px; /* espace au dessus */
+}
+
+.gallery img {
+    width: 250px; /* taille image */
+    border-radius: 15px; /* coins arrondis */
+    transition: .3s; /* animation fluide */
+}
+
+.gallery img:hover {
+    transform: scale(1.01); /* zoom au survol */
+    box-shadow: 0 0 20px rgb(21, 255, 0); /* effet lumiere */
+}

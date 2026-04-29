@@ -1,0 +1,137 @@
+/* page d'accueil */
+body {
+  margin: 0; /* enlève marge */
+  padding: 0; /* enlève espace */
+  font-family: monospace; /* police simple */
+
+  display: flex; /* flexbox */
+  flex-direction: column; /* en colonne */
+  align-items: center; /* centre horizontal */
+
+  min-height: 100vh; /* hauteur écran */
+  width: 100%; /* largeur totale */
+  overflow-x: hidden; /* pas scroll horizontal */
+
+  background: url(../images/decor-bas.png) no-repeat center bottom; /* image fond */
+  background-size: contain; /* ajuste image */
+  background-attachment: fixed; /* fond fixe */
+}
+
+/* texte bienvenue */
+#bienvenue-txt {
+  color: black; /* couleur texte */
+}
+
+/* bloc du haut */
+.haut {
+  display: flex; /* flexbox */
+  flex-direction: column; /* colonne */
+  align-items: center; /* centre */
+  gap: 15px; /* espace entre éléments */
+  margin-top: 50px; /* espace haut */
+}
+
+/* texte dans haut */
+.haut p {
+  font-size: 30px; /* taille */
+  text-align: center; /* centre texte */
+  color: white; /* couleur */
+}
+
+/* bloc des pages */
+.pages {
+  display: flex; /* flex */
+  flex-direction: column; /* colonne */
+  align-items: center; /* centre */
+
+  gap: 20px; /* espace */
+  width: 100%; /* largeur */
+  padding: 20px; /* espace intérieur */
+}
+
+/* bouton page */
+.btn-page {
+  display: flex; /* flex */
+  justify-content: center; /* centre horizontal */
+  align-items: center; /* centre vertical */
+
+  width: 500px; /* largeur */
+  max-width: 90vw; /* limite mobile */
+  height: 150px; /* hauteur */
+
+  font-size: 24px; /* taille texte */
+  font-weight: bold; /* texte gras */
+  color: black; /* couleur texte */
+  text-decoration: none; /* pas souligné */
+
+  border: 5px solid black; /* bordure */
+  border-radius: 15px; /* coins arrondis */
+
+  background-size: cover; /* image couvre */
+  background-position: center; /* centre image */
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* ombre */
+
+  transition: 0.3s; /* animation */
+}
+
+/* hover bouton */
+.btn-page:hover {
+  transform: scale(1.05); /* agrandit */
+  filter: brightness(1.2); /* éclaircit */
+}
+
+/* image clicker */
+.Clicker {
+  background-image: url("../images/backgroung1.png"); /* image */
+  background-position: center 45%; /* position */
+}
+
+/* image instant */
+.MyInstant {
+  background-image: url("../images/backgroung2.jpg"); /* image */
+  background-position: center; /* centre */
+}
+
+/* image history */
+.History {
+  background-image: url("../images/backgroung3.png"); /* image */
+  background-position: center; /* centre */
+}
+
+/* animation texte */
+.typing-wrapper {
+  display: flex; /* flex */
+  justify-content: center; /* centre */
+}
+
+/* texte qui s'écrit */
+.typing-text {
+  overflow: hidden; /* cache dépassement */
+  white-space: nowrap; /* pas retour ligne */
+  border-right: 3px solid; /* curseur */
+
+  width: 0; /* départ vide */
+
+  animation: typing 10s steps(30) forwards,
+  blink 0.6s infinite;
+}
+
+/* bouton s"inscrire */
+.btn-inscription { 
+  border: 1px solid rgb(0, 0, 0);
+  padding: 6px 12px; 
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* animation écriture */
+@keyframes typing {
+  from { width: 0; } /* début */
+  to { width: 30ch; } /* fin */
+}
+
+/* animation curseur */
+@keyframes blink {
+  50% { border-color: transparent; } /* clignote */
+}

@@ -1,0 +1,201 @@
+/* couleurs du site */
+:root {
+  --vert: #2ed573; /* couleur verte principale */
+  --texte: white; /* couleur du texte */
+  --texte-gris: #aaa; /* couleur texte secondaire */
+  --bordure: #ffffff30; /* couleur des bordures */
+}
+
+/* reset de base */
+* {
+  margin: 0; /* enlève les marges par défaut */
+  padding: 0; /* enlève les espaces par défaut */
+  box-sizing: border-box; /* rend les tailles plus simples */
+}
+
+/* page entière */
+body {
+  background: #0d0d0d url("../images/neon-audio-waves-stockcake.jpg") no-repeat center; /* fond image + couleur */
+  background-size: cover; /* image prend toute la page */
+  background-attachment: fixed; /* image reste fixe */
+
+  color: var(--texte); /* couleur du texte */
+  font-family: monospace; /* police simple */
+
+  min-height: 100vh; /* prend toute la hauteur de l'écran */
+
+  display: flex; /* active flexbox */
+  flex-direction: column; /* organise en colonne */
+  align-items: center; /* centre horizontalement */
+
+  padding: 40px 20px; /* espace autour du contenu */
+}
+
+/* bouton retour */
+.btn-retour {
+  position: absolute; /* position libre sur la page */
+  top: 20px; /* distance du haut */
+  left: 20px; /* distance de la gauche */
+
+  padding: 6px 12px; /* espace intérieur */
+  font-size: 14px; /* taille du texte */
+
+  color: var(--texte); /* couleur texte */
+  text-decoration: none; /* enlève soulignement */
+
+  background: rgba(0, 0, 0, 0.5); /* fond transparent */
+  border: 1px solid var(--bordure); /* bordure légère */
+  border-radius: 6px; /* coins arrondis */
+
+  transition: 0.2s; /* animation douce */
+}
+
+/* bouton retour au survol */
+.btn-retour:hover {
+  background: rgba(0, 0, 0, 0.8); /* fond plus foncé */
+}
+
+/* titre principal */
+h1 {
+  font-size: 2.2rem; /* taille du titre */
+  margin: 10px 0 8px; /* espace autour */
+  letter-spacing: 2px; /* espace entre lettres */
+  text-shadow: 0 0 20px black; /* effet lumineux */
+}
+
+/* sous titre */
+.sous-titre {
+  font-size: 14px; /* petite taille */
+  color: var(--texte-gris); /* couleur grise */
+  margin-bottom: 16px; /* espace en bas */
+}
+
+/* zone statut */
+#statut {
+  background: black; /* fond noir */
+  border: 2px solid #ff4757; /* bordure rouge */
+  color: white; /* texte blanc */
+
+  padding: 10px 20px; /* espace intérieur */
+  border-radius: 8px; /* coins arrondis */
+
+  font-size: 14px; /* taille texte */
+  text-align: center; /* centre le texte */
+
+  min-width: 260px; /* largeur minimum */
+  margin-bottom: 30px; /* espace en bas */
+}
+
+/* grille des sons */
+.soundboard {
+  display: grid; /* grille */
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  gap: 20px; /* espace entre blocs */
+
+  width: 100%; /* largeur totale */
+  max-width: 560px; /* largeur max */
+}
+
+/* carte d’un son */
+.son-bloque {
+  background: rgba(0, 0, 0, 0.65); /* fond transparent */
+  border-radius: 14px; /* coins arrondis */
+
+  padding: 20px; /* espace intérieur */
+
+  display: flex; /* flexbox */
+  flex-direction: column; /* en colonne */
+  align-items: center; /* centre */
+  gap: 10px; /* espace entre éléments */
+
+  transition: 0.2s; /* animation douce */
+}
+
+/* survol carte */
+.son-bloque:hover {
+  border-color: #00ff37; /* bordure verte */
+}
+
+/* bouton son */
+.btn {
+  width: 104px; /* largeur */
+  height: 99px; /* hauteur */
+
+  background: url("../images/transparent_button_small_sprite.png") no-repeat left center; /* image bouton */
+  background-size: 208px 99px; /* taille image */
+
+  border: none; /* pas de bordure */
+  cursor: pointer; /* curseur main */
+
+  color: transparent; /* cache texte */
+  font-size: 0; /* cache texte */
+}
+
+/* clic bouton */
+.btn:active {
+  background-position: right center; /* change image */
+}
+
+/* nom du son */
+.nom-son {
+  font-size: 13px; /* taille texte */
+  font-weight: bold; /* texte gras */
+  text-align: center; /* centre */
+  letter-spacing: 1px; /* espace lettres */
+}
+
+/* compteur clic */
+.compteur {
+  font-size: 12px; /* petite taille */
+  color: var(--texte-gris); /* gris */
+}
+
+/* bouton download */
+.btn-dl {
+  width: 100%; /* pleine largeur */
+  text-align: center; /* centre texte */
+
+  padding: 7px 14px; /* espace intérieur */
+  font-size: 13px; /* taille texte */
+
+  color: var(--vert); /* couleur verte */
+  background: transparent; /* fond transparent */
+  border: 1px solid var(--vert); /* bordure verte */
+  border-radius: 8px; /* coins arrondis */
+
+  text-decoration: none; /* enlève soulignement */
+  font-family: monospace; /* police simple */
+
+  transition: 0.2s; /* animation */
+}
+
+/* hover download */
+.btn-dl:hover {
+  background: var(--vert); /* fond vert */
+  color: #111; /* texte foncé */
+  transform: scale(1.03); /* agrandit un peu */
+}
+
+/* bouton stop */
+.btn-stop {
+  margin-top: 30px; /* espace en haut */
+  padding: 10px 28px; /* espace intérieur */
+
+  font-size: 14px; /* taille texte */
+
+  color: var(--texte-gris); /* gris */
+  background: rgba(0, 0, 0, 0.7); /* fond sombre */
+
+  border: 1px solid var(--bordure); /* bordure */
+  border-radius: 8px; /* coins arrondis */
+
+  cursor: pointer; /* main */
+  font-family: monospace; /* police */
+
+  transition: 0.2s; /* animation */
+}
+
+/* hover stop */
+.btn-stop:hover {
+  background: rgba(0, 0, 0, 0.9); /* plus foncé */
+}

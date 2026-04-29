@@ -1,0 +1,155 @@
+/* fond de la page */
+body {
+  background: #1a0a00; /* couleur fond */
+  color: wheat; /* couleur texte */
+  font-family: monospace; /* police simple */
+  text-align: center; /* centre texte */
+  padding: 20px; /* espace intérieur */
+}
+
+/* bouton retour */
+.btn-retour {
+  position: absolute; /* position libre */
+  top: 20px; /* distance haut */
+  left: 20px; /* distance gauche */
+
+  padding: 6px 12px; /* espace bouton */
+  font-size: 13px; /* taille texte */
+
+  color: wheat; /* couleur texte */
+  text-decoration: none; /* enlève soulignement */
+
+  background: #2a1200; /* fond bouton */
+  border: 1px solid #6b3a1f; /* bordure */
+  border-radius: 6px; /* coins arrondis */
+}
+
+/* hover bouton retour */
+.btn-retour:hover {
+  background: #3d1f00; /* couleur plus foncée */
+}
+
+/* titres */
+h1, h2 {
+  color: gold; /* couleur titres */
+}
+
+/* titre principal */
+h1 {
+  font-size: 2rem; /* taille */
+  margin-bottom: 10px; /* espace bas */
+}
+
+/* titre secondaire */
+h2 {
+  font-size: 1.2rem; /* taille */
+  margin: 30px 0 10px; /* espace */
+}
+
+/* score principal */
+#score {
+  font-size: 1.5rem; /* taille */
+  color: gold; /* couleur */
+  margin-bottom: 4px; /* espace bas */
+}
+
+/* cookies par seconde */
+#cps {
+  font-size: 0.9rem; /* petit texte */
+  color: #4fc3f7; /* bleu */
+  margin-bottom: 4px; /* espace bas */
+}
+
+/* puissance clic */
+#puissance {
+  font-size: 0.9rem; /* taille */
+  color: #69f0ae; /* vert */
+  margin-bottom: 20px; /* espace bas */
+}
+
+/* bouton cookie */
+#cookieBtn {
+  font-size: 90px; /* taille énorme */
+  background: none; /* pas de fond */
+  border: none; /* pas de bordure */
+  cursor: pointer; /* main */
+
+  transition: 0.1s; /* animation */
+}
+
+/* hover cookie */
+#cookieBtn:hover {
+  transform: scale(1.1); /* agrandit */
+}
+
+/* clic cookie */
+#cookieBtn:active {
+  transform: scale(0.85); /* réduit */
+}
+
+/* boutique */
+.boutique {
+  display: flex; /* flexbox */
+  justify-content: center; /* centre */
+  flex-wrap: wrap; /* retour ligne */
+  gap: 16px; /* espace */
+  margin-top: 10px; /* espace haut */
+}
+
+/* item boutique */
+.item {
+  width: 150px; /* largeur */
+  padding: 16px; /* espace */
+
+  background: #2a1200; /* fond */
+  border: 2px solid #6b3a1f; /* bordure */
+  border-radius: 10px; /* coins */
+}
+
+/* nom item */
+.item-nom {
+  font-size: 13px; /* taille */
+  font-weight: bold; /* gras */
+  margin-bottom: 6px; /* espace */
+}
+
+/* info item */
+.item-info {
+  font-size: 11px; /* petit texte */
+  color: #4fc3f7; /* bleu */
+  margin-bottom: 6px; /* espace */
+}
+
+/* prix item */
+.item-prix {
+  font-size: 12px; /* taille */
+  color: gold; /* couleur */
+  margin-bottom: 10px; /* espace */
+}
+
+/* bouton achat */
+.btn-achat {
+  padding: 6px 14px; /* espace */
+  font-size: 12px; /* taille */
+
+  background: #3d1f00; /* fond */
+  color: wheat; /* texte */
+
+  border: 2px solid gold; /* bordure */
+  border-radius: 6px; /* coins */
+
+  cursor: pointer; /* main */
+  font-family: monospace; /* police */
+}
+
+/* hover achat */
+.btn-achat:hover {
+  background: gold; /* fond */
+  color: #1a0a00; /* texte foncé */
+}
+
+/* bouton désactivé */
+.btn-achat:disabled {
+  opacity: 0.4; /* transparent */
+  cursor: not-allowed; /* interdit */
+}

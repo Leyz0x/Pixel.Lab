@@ -1,0 +1,61 @@
+/* fond du loader */
+#loading-animation {
+    position: fixed; /* reste fixe sur l'écran */
+    width: 100%; /* pleine largeur */
+    height: 100vh; /* pleine hauteur écran */
+    background: white; /* fond blanc */
+
+    display: flex; /* centre contenu */
+    justify-content: center; /* centre horizontal */
+    align-items: center; /* centre vertical */
+
+    z-index: 9999; /* passe au-dessus de tout */
+}
+
+/* cercle extérieur */
+#loading-animation-div {
+    width: 200px; /* taille */
+    height: 200px; /* taille */
+    border-radius: 50%; /* forme cercle */
+
+    background: conic-gradient(red 0% 25%, transparent 25% 100%); /* partie rouge */
+
+    display: flex; /* centre contenu */
+    justify-content: center; /* centre horizontal */
+    align-items: center; /* centre vertical */
+
+    animation: tourner 1s linear infinite; /* rotation */
+}
+
+/* cercle intérieur */
+#loading-animation-div-inner {
+    width: 160px; /* taille */
+    height: 160px; /* taille */
+    border-radius: 50%; /* cercle */
+
+    background: white; /* fond blanc */
+
+    display: flex; /* centre contenu */
+    justify-content: center; /* centre horizontal */
+    align-items: center; /* centre vertical */
+}
+
+/* image au centre */
+#loading-animation-image {
+    width: 80px; /* largeur image */
+    height: 80px; /* hauteur image */
+
+    animation: tournerInverse 1s linear infinite; /* rotation inverse */
+}
+
+/* rotation normale */
+@keyframes tourner {
+    from { transform: rotate(0deg); } /* début */
+    to { transform: rotate(360deg); } /* fin */
+}
+
+/* rotation inverse */
+@keyframes tournerInverse {
+    from { transform: rotate(0deg); } /* début */
+    to { transform: rotate(-360deg); } /* fin */
+}
