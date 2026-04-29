@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClickerLab - Pixel.Lab</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="icon" type="image/png" href="images/cursor_icon.png">
+</head>
+
+<body>
+<!-- lien retour accueil -->
+<a href="index.html" class="btn-retour">accueil</a>
+<!-- titre -->
+<h1>clickerlab</h1>
+<!-- affichage des stats -->
+<p id="score">0 cookies</p>
+<p id="cps">0 cookies par seconde</p>
+<p id="puissance">1 clic = 1 cookie</p>
+<!-- bouton cookie -->
+<button id="cookieBtn">🍪</button>
+<!-- titre -->
+<h2>boutique</h2>
+<!-- zone boutique -->
+<div class="boutique">
+  <!-- mamie -->
+  <div class="item">
+    <p class="item-nom">mamie</p>
+    <p class="item-info">+1 cookie/sec</p>
+    <p class="item-prix" id="prix-mamie">prix : 10</p>
+    <button class="btn-achat" id="btn-mamie">acheter</button>
+  </div>
+  <!-- ferme -->
+  <div class="item">
+    <p class="item-nom">ferme</p>
+    <p class="item-info">+5 cookies/sec</p>
+    <p class="item-prix" id="prix-ferme">prix : 50</p>
+    <button class="btn-achat" id="btn-ferme">acheter</button>
+  </div>
+  <!-- mine -->
+  <div class="item">
+    <p class="item-nom">mine</p>
+    <p class="item-info">+20 cookies/sec</p>
+    <p class="item-prix" id="prix-mine">prix : 200</p>
+    <button class="btn-achat" id="btn-mine">acheter</button>
+  </div>
+  <!-- usine -->
+  <div class="item">
+    <p class="item-nom">usine</p>
+    <p class="item-info">+100 cookies/sec</p>
+    <p class="item-prix" id="prix-usine">prix : 1000</p>
+    <button class="btn-achat" id="btn-usine">acheter</button>
+  </div>
+  <!-- clic x3 -->
+  <div class="item">
+    <p class="item-nom">clic x3</p>
+    <p class="item-info">1 clic = 3 cookies</p>
+    <p class="item-prix" id="prix-clic3">prix : 30</p>
+    <button class="btn-achat" id="btn-clic3">acheter</button>
+  </div>
+  <!-- clic x10 -->
+  <div class="item">
+    <p class="item-nom">clic x10</p>
+    <p class="item-info">1 clic = 10 cookies</p>
+    <p class="item-prix" id="prix-clic10">prix : 300</p>
+    <button class="btn-achat" id="btn-clic10">acheter</button>
+  </div>
+  <!-- clic x50 -->
+  <div class="item">
+    <p class="item-nom">clic x50</p>
+    <p class="item-info">1 clic = 50 cookies</p>
+    <p class="item-prix" id="prix-clic50">prix : 2000</p>
+    <button class="btn-achat" id="btn-clic50">acheter</button>
+  </div>
+</div>
+<!-- script java du jeu -->
+<script src="js/clicker.js"></script>
+</body>
+</html>

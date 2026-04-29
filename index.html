@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/acceuil.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <title>Pixel.Lab</title>
+  <link rel="icon" type="image/png" href="images/cursor_icon.png">
+</head>
+
+<body>
+<!-- loader affiché au chargement -->
+<div id="loading-animation">
+  <!-- cercle extérieur animé -->
+  <div id="loading-animation-div">
+    <!-- cercle intérieur -->
+    <div id="loading-animation-div-inner">
+      <!-- image au centre -->
+      <img id="loading-animation-image" src="images/loader.png" alt="loading">
+    </div>
+  </div>
+</div>
+<!-- contenu principal -->
+<div class="haut">
+  <!-- logo du site -->
+  <img src="images/logo.png" alt="pixel lab logo" width="200" title="pixel lab">
+  <!-- texte de bienvenue -->
+  <div class="typing-wrapper">
+    <p id="bienvenue-txt" class="typing-text">
+      bienvenue sur <u>pixel.lab</u>
+    </p>
+  </div>
+</div>
+<!-- navigation vers les pages -->
+<div class="pages">
+  <!-- page clicker -->
+  <a href="page1.html" class="btn-page Clicker"></a>
+  <!-- page instant -->
+  <a href="page2.html" class="btn-page MyInstant"></a>
+  <!-- page history -->
+  <a href="page3.html" class="btn-page History"></a>
+</div>
+<a href="inscription.html" class="btn-inscription">Inscription</a><br>
+<!-- script loader -->
+<script src="js/loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style2.css">
+  <title>Sounds Board - Pixel.Lab</title>
+  <link rel="icon" type="image/png" href="images/cursor_icon.png">
+</head>
+
+<body>
+<!-- lien retour accueil -->
+<a href="index.html" class="btn-retour">accueil</a>
+<!-- titre -->
+<h1>pixel soundboard</h1>
+<!-- sous titre -->
+<p class="sous-titre">clique sur un son pour le jouer</p>
+<!-- statut du son en cours -->
+<p id="statut">aucun son joué</p>
+<!-- zone des sons  -->
+<div class="soundboard">
+  <!-- son discord -->
+  <div class="son-bloque">
+    <button class="btn" data-sound="sound1" data-nom="discord"></button>
+    <span class="nom-son">discord</span>
+    <span class="compteur" id="count-sound1">0 clic</span>
+    <a href="sounds/discord-nofications.mp3" download class="btn-dl">telecharger</a>
+  </div>
+  <!-- son erreur -->
+  <div class="son-bloque">
+    <button class="btn" data-sound="sound2" data-nom="erreur"></button>
+    <span class="nom-son">erreur</span>
+    <span class="compteur" id="count-sound2">0 clic</span>
+    <a href="sounds/error_CDOxCYm.mp3" download class="btn-dl">telecharger</a>
+  </div>
+  <!-- son rizz -->
+  <div class="son-bloque">
+    <button class="btn" data-sound="sound3" data-nom="rizz"></button>
+    <span class="nom-son">rizz</span>
+    <span class="compteur" id="count-sound3">0 clic</span>
+    <a href="sounds/rizz-sound-effect.mp3" download class="btn-dl">telecharger</a>
+  </div>
+  <!-- son faaah -->
+  <div class="son-bloque">
+    <button class="btn" data-sound="sound4" data-nom="faaah"></button>
+    <span class="nom-son">faaah</span>
+    <span class="compteur" id="count-sound4">0 clic</span>
+    <a href="sounds/faaah.mp3" download class="btn-dl">telecharger</a>
+  </div>
+</div>
+<!-- bouton stop -->
+<button id="btnStop" class="btn-stop">stop</button>
+<!-- sons (invisibles) -->
+<audio id="sound1" src="sounds/discord-nofications.mp3"></audio>
+<audio id="sound2" src="sounds/error_CDOxCYm.mp3"></audio>
+<audio id="sound3" src="sounds/rizz-sound-effect.mp3"></audio>
+<audio id="sound4" src="sounds/faaah.mp3"></audio>
+<!-- javascript -->
+<script src="js/script.js"></script>
+</body>
+</html>
+
